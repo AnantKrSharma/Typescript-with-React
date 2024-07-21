@@ -1,8 +1,8 @@
 import React from "react";
 
 interface ButtonProps{
-  text: string | number | boolean;
-  onClick?: () => void   // optional 
+  text: string | number | boolean | undefined;
+  onClick?: () => void  | undefined // optional 
 }
 
 // By doing this, we are informing TypeScript that the Button component expects props that match the ButtonProps interface. This resolves the type incompatibility error.
